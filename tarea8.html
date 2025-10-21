@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puertos de Red</title>
+</head>
+<body>
+    <h1>Puertos de Red</h1>
+    <h2>¿Qué es un puerto de red?</h2>
+<p>
+ Es una interfaz virtual en un dispositivo, como un ordenador o un servidor, este permite la comunicación 
+ y intercambio de datos a través de una red. Estos puertos no son fisicos, sino que son constructos lógicos identificados
+ por números de puerto, estos son únicos.
+</p>
+<h2>Tipos de puertos de red</h2>
+<p>
+ Existen tres tipos principales de puertos de red:
+<ul>
+    <li>Puertos Bien Conocidos</li>
+    <li>Puertos Registrados</li>
+    <li>Puertos Dinámicos o Privados</li>
+</ul>
+
+<h3>Puertos Bien Conocidos</h3>
+<p>
+    Estos puertos son del 0 al 1023, son utilizados por protocolos y aplicaciones.
+</p>
+<ul>
+    <li>
+     Por ejemplo: El puerto 80 es utilizado por el protocolo HTTP, lo que facilita
+     la navegación web.
+    </li>
+</ul>
+<h3>Puertos Registrados</h3>
+<p>
+    Estos puertos tienen un rango del 1024 al 49151, son menos conocidos, 
+    pero todavia son usados para cosas específicas como IANA(Internet Assigned Numbers Authority).
+</p>
+<h3>Puertos Dinámicos o Privados</h3>
+<p>
+    Estos puertos van del 49152 al 65535, son asignados de forma dinámica para las aplicaciones del cliente cuendo se es
+    necesario, así facilitando múltiples sesiones de comunicación simultáneas.
+</p>
+<h2>TCP Y UDP</h2>
+<P>
+    Los puertos de red trabajan en conjunto con los protocolos de la capa de transporte del modelo OSI, principalmente
+    con TCP (Transmission Control Protocol) y UDP (User Datagram Protocol).
+</P>
+<h3>TCP</h3>
+<p>
+    Es un protocolo orientado a la conexión, lo que significa que se establece una conexión segura y confiale antes de que transmitan
+    los datos. Los puertos que están asociados con TCP garantizan la entrega de forma correcta y en orden de los datos.
+</p>
+<ul>
+    <li>Por ejemplo: El puerto 443 se usa de forma común para la conexiones HTTPS de forma segura.</li>
+</ul>
+<h3>UDP</h3>
+<p>
+    Este a difencia de TCP, es un protocolo sin conexión, lo que da a entender que puede envíar datos sin haber establecido una
+    conexión previa, lo que da como resultado una transmición más rápida, pero menos fiable. Los puertos UDP se usan comúnmente para los
+    juegos en línea o streaming, en donde es muy crucial la velocidad.
+</p>
+<ul>
+    <li>Por ejemplo: El puerto 53 se usa para las consultas DNS (Domain Name System) utilizando UDP.</li>
+</ul>
+<h2>Protocolos de Red</h2>
+<h3>HTTP</h3>
+<p>
+    HTTP(Hyper Text Transfer Protocol) Es el protocolo base de la World Wide Web. Se utiliza para transmitir datos, principalmente páginas web (documentos HTML), entre un 
+    navegador (cliente) y un servidor web.
+</p>
+<ul>
+    <li> El puerto que utiliza es el TCP 80.</li>
+</ul>
+<h3>HTTPS</h3>
+<p>
+    HTTPS(Hyper Text Transfer Protocol Secure) Es una versión segura de HTTP que utiliza cifrado SSL/TLS para proteger la comunicación entre el cliente y el servidor.
+</p>
+<ul>
+    <li> El puerto que utiliza es el TCP 443.</li> 
+</ul>
+<h3>FTP</h3>
+<p>
+    FTP(File Transfer Protocol) Es un protocolo utilizado para transferir archivos entre un cliente y un servidor en una red. Permite la carga y descarga de archivos.
+</p>
+<ul>
+    <li> Los puertos que utiliza son el TCP 20 y 21.</li>
+</ul>
+<h3>FTPS</h3>
+<P>
+    FTPS(File Transfer Protocol Secure) Es una versión segura de FTP que utiliza cifrado SSL/TLS para proteger la transferencia de archivos entre el cliente y el servidor.
+</P>
+<ul>
+    <li>Los puertos que utiliza son el TCP 21 y 990.</li>
+</ul>
+<h3>SFTP</h3>
+<p>
+    SFTP(Secure File Transfer Protocol) Es un protocolo de transferencia de archivos que funciona sobre el protocolo SSH (Secure Shell). Proporciona una forma segura de transferir archivos
+    entre un cliente y un servidor.
+</p>
+<ul>
+    <li>El puerto que utiliza es el TCP 22.</li>
+</ul>
+<h3>SMTP</h3>
+<p>
+    SMTP(Simple Mail Transfer Protocol) Es un protocolo utilizado para enviar correos electrónicos entre servidores de correo. 
+</p>
+<ul>
+    <li>El puerto que utiliza es el TCP 25 (tradicionalmente)</li>
+    <li>TCP 857 (moderno, con cifrado STARTTLS)</li>
+    <li>TCP 465 (antiguo, SMTPS)</li>
+</ul>
+<h3>POP3</h3>
+<p>
+    POP3(Post Office Protocol version 3) Es un protocolo utilizado por los clientes de correo electrónico para recuperar correos electrónicos, generalmente descarga los correos del servidor
+    al dispositivo local y los elimina del servidor (aunque puede configurarse para no hacerlo).
+</p>
+<ul>
+    <li>Utiliza el puerto TCP 110 (no cifrado)</li>
+    <li>Utiliza el puerto TCP 995 (POP3S, cifrado)</li>
+</ul>
+<h3>IMAP</h3>
+<p>
+    IMAP(Internet Message Access Protocol) Es un protocolo utilizado por los clientes de correo electrónico para acceder y gestionar correos electrónicos almacenados en un servidor de correo.
+    A diferencia de POP3, IMAP permite a los usuarios ver y organizar sus correos electrónicos directamente en el servidor sin necesidad de descargarlos.
+</p>
+<ul>
+    <li>Utiliza el puerto TCP 143 (no cifrado)</li>
+    <li>Utiliza el puerto TCP 993 (IMAPS, cifrado)</li>
+</ul>
+<h3>MIME</h3>
+<p>
+    MIME(Multipurpose Internet Mail Extensions) No es un protocolo de red en sí mismo, sino un estándar que extiende el formato de los correos electrónicos para permitir la inclusión de
+    contenido multimedia, como imágenes, audio, video y archivos adjuntos. MIME define cómo se codifica y estructura este contenido dentro de los correos electrónicos.
+</p>
+<h3>IRC</h3>
+<p>
+    IRC(Internet Relay Chat) Es un protocolo de comunicación en tiempo real que permite a los usuarios participar en conversaciones grupales o privadas a través de canales de chat.
+    Fue uno de los primeros protocolos de chat en línea y sigue siendo utilizado por comunidades en línea.
+</p>
+<ul>
+    <li>Utiliza el puerto TCP 6667 (no cifrado)</li>
+    <li>Utiliza el puerto TCP 6697 (IRC sobre SSL/TLS, cifrado)</li>
+</ul>
+<h3>XMPP</h3>
+<p>
+    XMPP(Extensible Messaging and Presence Protocol) Es un protocolo de comunicación en tiempo real utilizado para mensajería instantánea, presencia y colaboración en línea.
+    Es un protocolo abierto y extensible que permite a los usuarios enviar mensajes de texto, compartir archivos y participar en conferencias de chat.
+</p>
+<ul>
+    <li>Utiliza el puerto TCP 5222 (conexión cliente-servidor)</li>
+</ul>
+<h3>BitTorrent</h3>
+<p>
+    BitTorrent Es un protocolo de intercambio de archivos peer-to-peer (P2P) que permite a los usuarios compartir y descargar archivos grandes de manera eficiente.
+    En lugar de descargar un archivo desde un servidor centralizado, los usuarios descargan fragmentos del archivo desde múltiples fuentes (otros usuarios) simultáneamente.
+</p>
+<ul>
+    <li>Utliza el puerto TCP 6881-6889 (rango tradicional), aunque los clientes actuales usan puertos aleatorios de un rango más alto.</li>
+</ul>
+<h3>FastTrack</h3>
+<p>
+    FastTrack Es un protocolo de intercambio de archivos P2P que fue popularizado por aplicaciones como Kazaa y Grokster.
+    Permite a los usuarios compartir y descargar archivos directamente entre ellos sin necesidad de un servidor centralizado.
+</p>
+<ul>
+    <li>Utiliza el puerto TCP 1214</li>
+</ul>
+<h3>MTProto</h3>
+<p>
+    MTProto Es el protocolo de comunicación utilizado por la aplicación de mensajería Telegram.
+    Está diseñado para ser rápido, seguro y eficiente, permitiendo a los usuarios enviar mensajes, archivos y realizar llamadas de voz y video.
+</p>
+<ul>
+    <li>No tiene un puerto en específico, pero conmunmente usa el TCP 443 para camuflarse como tráfico web, puede usar el 80, 5222 o 25.</li>
+</ul>
+</body>
+</html>
