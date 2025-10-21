@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo HTTP</title>
+</head>
+<body>
+    <h1>Protocolo HTTP</h1>
+    <h2>¿Qué es HTTP?</h2>
+    <p>
+     HTTP (Hypertext Transfer Protocol) es el protocolo de comunicación que se 
+     utiliza para la transferencia de datos en la World Wide Web. Fue desarrollado
+     por Tim Berners-Lee en 1989 y es la base de la comunicación en la web.  
+     HTTP define cómo los mensajes son formateados y transmitidos, y cómo los 
+     servidores y navegadores web deben responder a diversas solicitudes.
+    </p>
+     <p>Pertenece a la base de protocolos que sostienen la web, fue diseñado para
+     permitir la comunicación entre clientes (como navegadores web) y servidores,
+     se ejecuta sobre otras capas de un conjunto de protocolos de una red. Este
+     protocolo esta basado en el principio de cliente-servidor.
+    </p>
+    <h2>Cliente</h2>
+    <p>
+     El cliente es el dispositivo o software que inicia la comunicación y 
+     solicita recursos al servidor. En el contexto de HTTP, el cliente suele ser
+     un navegador web (como Chrome, Firefox, Safari, etc.) que envía solicitudes
+     HTTP para obtener páginas web, imágenes, videos y otros recursos desde un 
+     servidor web.
+    </p>
+    <h2>Servidor</h2>
+    <p>
+     El servidor es el dispositivo o software que recibe las solicitudes del 
+     cliente y responde proporcionando los recursos solicitados. Un servidor web
+     (como Apache, Nginx, etc.) aloja sitios web y maneja las solicitudes HTTP 
+     enviadas por los clientes, devolviendo las páginas web y otros contenidos 
+     solicitados.
+    </p>
+    <h2>Funcionamiento de HTTP</h2>
+    <p>
+     El funcionamiento de HTTP se basa en un modelo de solicitud-respuesta entre
+     un cliente y un servidor. Cuando un usuario ingresa una URL en su navegador,
+     el navegador actúa como cliente y envía una solicitud HTTP al servidor que
+     aloja el recurso solicitado (como una página web, imagen, video, etc.). El 
+     servidor procesa la solicitud y envía una respuesta HTTP de vuelta al 
+     cliente, que incluye el recurso solicitado o un mensaje de error si el 
+     recurso no está disponible.
+    </p>
+    <img src="https://mdn.github.io/shared-assets/images/diagrams/http/overview/http-layers.svg" width="600" height="400">
+    <h2>Métodos HTTP</h2>
+    <p>
+        HTTP define un conjunto de métodos de petición para indicar la acción que 
+        se desea realizar para un recurso determinado. Aunque estos también pueden ser sustantivos, 
+        estos métodos de solicitud a veces son llamados HTTP verbs.
+    </p>
+    <p>
+     HTTP define varios métodos que indican la acción que se desea realizar en 
+     el recurso especificado. Los métodos más comunes son:
+    </p>
+    <ul>
+        <li>GET: Solicita la representación de un recurso específico. Es el método
+         más comúnmente utilizado para obtener datos de un servidor.
+        </li>
+        <li>POST: Envía datos al servidor para crear o actualizar un recurso. Se 
+         utiliza comúnmente en formularios web.
+        </li>
+        <li>PUT: Actualiza un recurso existente o crea uno nuevo si no existe.
+        </li>
+        <li>DELETE: Elimina un recurso específico del servidor.
+        </li>
+        <li>HEAD: Similar a GET, pero solo solicita los encabezados de la respuesta,
+         sin el cuerpo del mensaje. Se utiliza para obtener metadatos sobre un 
+         recurso.
+        </li>
+        <li>OPTIONS: Solicita información sobre las opciones de comunicación 
+         disponibles para un recurso específico.
+        </li>
+    </ul>
+    <h2>Códigos de Estado HTTP</h2>
+    <p>
+        Los códigos de estado de respuesta HTTP indican si se ha completado 
+        satisfactoriamente una solicitud HTTP específica.
+    </p>
+    <p>
+     Las respuestas HTTP incluyen códigos de estado que indican el resultado de 
+     la solicitud. Algunos códigos de estado comunes son:
+    </p>
+    <ul>
+        <li>200 OK: La solicitud fue exitosa y el servidor devolvió el recurso 
+         solicitado.
+        </li>
+        <li>301 Moved Permanently: El recurso solicitado ha sido movido 
+         permanentemente a una nueva URL.
+        </li>
+        <li>404 Not Found: El recurso solicitado no se encontró en el servidor.
+        </li>
+        <li>500 Internal Server Error: Hubo un error interno en el servidor al
+            procesar la solicitud.
+        </li>
+    </ul>  
+    <h2>Tarea 9</h2>
+    <a target="_blank" href="Puertos de Red.html">Puertos de Red</a>
+</body>
+
+</html>
+
