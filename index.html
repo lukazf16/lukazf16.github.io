@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de Inicio</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            margin-bottom: 15px;
+        }
+        nav a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            border-radius: 8px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #0056b3;
+        }  
+        nav a.desactivado {
+            background-color: #cccccc;
+            color: #666666;
+            cursor: not-allowed;
+        }
+        nav a.desactivado:hover {
+            background-color: #cccccc;
+        }   
+    </style>
 </head>
 <body>
-    
+
+    <div class="container">
+        <h1>¡Bienvenido a las Actividades!</h1>
+        <p>Selecciona una actividad para continuar:</p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="tipologia.html">1. Tipología de los contenidos de Internet</a>
+                </li>
+                <li>
+                    <a href="tarea8.html">2. Protocolo HTTP</a>
+                </li>
+                <li>
+                    <a href="tarea9.html">3. Puertos de Red</a>
+                <li>
+                    <a href="Infografia.html"> 4. Infografía "Tecnologías Disruptivas" </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </body>
 </html>
